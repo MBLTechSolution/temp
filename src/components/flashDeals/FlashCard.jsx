@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -23,11 +23,7 @@ const SamplePrevArrow = (props) => {
     </div>
   )
 }
-const FlashCard = ({ productItems, addToCart }) => {
-  const [count, setCount] = useState(0)
-  const increment = () => {
-    setCount(count + 1)
-  }
+const FlashCard = ({ productItems}) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -49,8 +45,6 @@ const FlashCard = ({ productItems, addToCart }) => {
                   <span className='discount'>{productItems.discount}% Off</span>
                   <img src={productItems.cover} alt='' />
                   <div className='product-like'>
-                    <label>{count}</label> <br />
-                    <i className='fa-regular fa-heart' onClick={increment}></i>
                   </div>
                 </div>
                 <div className='product-details'>
@@ -67,8 +61,8 @@ const FlashCard = ({ productItems, addToCart }) => {
                     {/* step : 3  
                      if hami le button ma click garryo bahne 
                     */}
-                    <button onClick={() => addToCart(productItems)}>
-                      <i className='fa fa-plus'></i>
+                    <button>
+                      <i className='fa fa-plus' ></i>
                     </button>
                   </div>
                 </div>

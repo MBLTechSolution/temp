@@ -27,3 +27,13 @@
   left: 0;
   margin: auto;
 }
+.btn{
+  border-radius: 5px;
+  padding: 10px;
+  height: 45px;
+  width: 150px;
+  background-color: #0f3460;
+}
+.btn a{
+  color: white;
+}

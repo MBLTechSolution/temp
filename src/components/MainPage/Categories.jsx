@@ -1,34 +1,41 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const Categories = () => {
-  const data = [
-    {
-      cateName: "All-Purpose Flour",
-    },
-    {
-      cateName: "Whole Wheat Flour",
-    },
-    {
-      cateName: "Self-Rising Flour",
-    },
-    {
-      cateName: "Bakers’ Flour",
-    },
-    {
-      cateName: " Atta Flour",
-    },
-  ]
 
   return (
     <>
       <div className='category'>
-        {data.map((value, index) => {
-          return (
-            <div className='box f_flex' key={index}>
-              <span>{value.cateName}</span>
-            </div>
-          )
-        })}
+        <div >
+          <ul>
+          <span className='box f_flex'>
+              <li>
+                <Link to='/'>All-Purpose Flour</Link>
+              </li>
+            </span>
+            <span className='box f_flex'>
+              <li>
+                <Link to='/'>Whole Wheat Flour</Link>
+              </li>
+            </span>
+            <span className='box f_flex'>
+              <li>
+                <Link to='/pages'>Self-Rising Flour</Link>
+              </li>
+            </span>
+            <span className='box f_flex'>
+              <li>
+                <Link to='/user'>Bakers’ Flour</Link>
+              </li>
+            </span>
+            <span className='box f_flex'>
+              <li>
+                <Link to='/contact'>Atta Flour</Link>
+              </li>
+            </span>
+          </ul>
+
+        </div>
       </div>
     </>
   )

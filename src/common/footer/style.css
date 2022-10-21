@@ -34,3 +34,8 @@ footer li {
   margin-bottom: 10px;
   opacity: 0.5;
 }
+.logo{
+  font-weight: bold;
+  font-size: 40px;
+  font-family:'Times New Roman', Times, serif;
+}

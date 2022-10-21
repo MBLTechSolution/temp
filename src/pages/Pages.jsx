@@ -4,11 +4,11 @@ import FlashDeals from "../components/flashDeals/FlashDeals"
 import Discount from "../components/discount/Discount"
 import Wrapper from "../components/wrapper/Wrapper"
 
-const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
+const Pages = ({ productItems}) => {
   return (
     <>
-      <Home CartItem={CartItem} />
-      <FlashDeals productItems={productItems} addToCart={addToCart} />
+      <Home/>
+      <FlashDeals productItems={productItems}/>
       <Discount />
       <Wrapper />
     </>
